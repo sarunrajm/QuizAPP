@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: #000000;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
+}
+.bodybg {
+  background-color: #D2E3C8;
 }
 
-.App-link {
-  color: #61dafb;
+.app {
+  background-color: #86A789;
+  width: 1000px;
+  min-height: 200px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 50px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button {
+  font-size: 14px;
+  background-color: #EBF3E8;
+  border-radius: 6px;
+  display: flex;
+  padding: 6px;
+  justify-content: flex-start;
+  align-items: center;
+  border: 5px solid;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #D2E3C8;
+  background-color: rgb(0, 0, 0);
+}
+.nextbtn{
+  border-color: #86A789;
+  background-color: #EBF3E8;
+  border-radius: 10px;
+}
+
+button.correct {
+  border: 5px solid rgb(94, 253, 94); 
+}
+
+button.wrong {
+  border: 5px solid red; 
+}
+
+.question-section {
+  width: 900px;
+}
+
+.ddownbtn {
+  margin-left: 690px;
+}
+#dropdown-basic {
+  margin-left: 800px;
+}
+
+@media (max-width: 768px) {
+  .app {
+    width: 23rem;
+    padding: 30px;
+    height: 100vh;
+    background-color: #BFB29E;
+    border-radius: 0px;
+    box-shadow:0px;
   }
-  to {
-    transform: rotate(360deg);
+
+  button {
+    padding: 8px;
+    background-color: #D6C7AE;
+  }
+
+  .question-section {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .ddownbtn {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #dropdown-basic {
+    margin-left: 220px;
+    text-align: center;
+  }
+  .MuiAlert-message {
+    font-size: 10px;
+  }
+  .nextbtn{
+    font-size: '14px';
+    padding: 5px; 
+    background-color: #D6C7AE;
+    border-color: #6a604e;
+  }
+  button:hover {
+    color: #D2E3C8;
+    background-color: rgb(0, 0, 0);
+  }
+  .bodybg {
+    background-color: #BFB29E;
   }
 }
